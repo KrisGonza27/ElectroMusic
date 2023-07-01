@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: /php-login');
+    header('Location: /index.php');
   }
   require 'database.php';
 
