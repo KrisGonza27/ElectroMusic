@@ -1,4 +1,3 @@
-
 <header class="header">
         <div class="wrap">
             <div class="contenedor">
@@ -22,8 +21,14 @@
                 </div>
             </div>
             <div class="header__texto">
-                <h2 class="no-margin">Tu musica, Mi musica, Nuestra musica</h2>
-                <p class="no-margin">La musica es arte</p>
+            <h1 class="sign_in_form">Inicia Sesión</h1>
+                <span class="sign_in_form"> <a href="registrar.php">Registrate</a></span>
+
+                <form action="iniciar_sesion.php" method="POST">
+                <input class="sign_in_form" name="email" type="text" placeholder="Ingresa tu email">
+                <input class="sign_in_form" name="password" type="password" placeholder="Ingresa tu Contraseña">
+                <input class="sign_in_form submit" type="submit" value="Iniciar">
+                </form>
             </div>
         </div>
     </header> 

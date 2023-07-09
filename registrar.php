@@ -69,10 +69,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <span>o <a href="iniciar_sesion.php">Inicia Sesión</a></span>
 
     <form action="registrar.php" method="POST">
-        <input name="username" type="text" placeholder="Ingresa tu nombre de usuario">
-        <input name="email" type="text" placeholder="Ingresa tu email">
-        <input name="password" type="password" placeholder="Ingresa tu Contraseña">
-        <input name="confirm_password" type="password" placeholder="Confirma tu Contraseña">
+        <input class="sign_up_form" name="username" type="text" placeholder="Ingresa tu nombre de usuario">
+        <input class="sign_up_form" name="email" type="text" placeholder="Ingresa tu email">
+        <input class="sign_up_form" name="password" type="password" placeholder="Ingresa tu Contraseña">
+        <input class="sign_up_form" name="confirm_password" type="password" placeholder="Confirma tu Contraseña">
         <input type="submit" value="Crear Cuenta">
     </form>
 

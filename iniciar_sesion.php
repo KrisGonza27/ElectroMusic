@@ -40,19 +40,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <?php require 'componentes/header.php' ?>
+    <?php require 'componentes/header2.php' ?>
 
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
     <?php endif; ?>
 
-    <h1>Inicia Sesión</h1>
-    <span>o <a href="registrar.php">Registrate</a></span>
+    <h1 class="sign_in_form">Inicia Sesión</h1>
+    <span class="sign_in_form"> <a href="registrar.php">Registrate</a></span>
 
     <form action="iniciar_sesion.php" method="POST">
-      <input name="email" type="text" placeholder="Ingresa tu email">
-      <input name="password" type="password" placeholder="Ingresa tu Contraseña">
-      <input type="submit" value="Submit">
+      <input class="sign_in_form" name="email" type="text" placeholder="Ingresa tu email">
+      <input class="sign_in_form" name="password" type="password" placeholder="Ingresa tu Contraseña">
+      <input class="sign_in_form submit" type="submit" value="Iniciar">
     </form>
+    <?php require 'componentes/footer.php' ?>
   </body>
 </html>
